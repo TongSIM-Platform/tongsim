@@ -258,9 +258,10 @@
         }
         .comparison-table th, .comparison-table td {
             padding: 10px 16px;
-            text-align: center;
+            text-align: center !important;
             border: none;
             border-bottom: 1px solid #f5f5f5;
+            vertical-align: middle !important;
         }
         
         /* Header Styles */
@@ -272,20 +273,20 @@
             vertical-align: middle;
             padding-top: 20px;
             padding-bottom: 20px;
+            text-align: center !important;
         }
 
         /* First Column: Category */
         .comparison-table .category-cell {
             font-weight: 600;
-            text-align: left;
+            text-align: center !important;
             color: #202124;
             width: 120px;
-            padding-left: 24px;
         }
 
         /* Second Column: Feature Name */
         .comparison-table .feature-name {
-            text-align: left;
+            text-align: center !important;
             color: #5f6368;
             width: 200px;
         }
@@ -295,12 +296,14 @@
             background-color: #f4f8ff;
             color: #1967d2;
             font-weight: 600;
+            text-align: center !important;
         }
         
         .comparison-table th.highlight-col {
             background-color: #f4f8ff;
             color: #1967d2;
             border-bottom: 2px solid #d2e3fc;
+            text-align: center !important;
         }
         
         /* Category Group Separators */
@@ -583,7 +586,7 @@
 
                     <!-- Platform Features -->
                     <tr>
-                        <td rowspan="5" class="category-cell">Platform<br>Features</td>
+                        <td rowspan="4" class="category-cell">Platform<br>Features</td>
                         <td class="feature-name">Parallel Training</td>
                         <td class="highlight-col"><span class="check">✔</span></td>
                         <td><span class="check">✔</span></td>
@@ -610,15 +613,6 @@
                         <td><span class="check">✔</span></td>
                         <td><span class="check">✔</span></td>
                     </tr>
-                    <tr>
-                        <td class="feature-name">Voxelized Annotation</td>
-                        <td class="highlight-col"><span class="check">✔</span></td>
-                        <td><span class="cross">✘</span></td>
-                        <td><span class="cross">✘</span></td>
-                        <td><span class="cross">✘</span></td>
-                        <td><span class="cross">✘</span></td>
-                        <td><span class="cross">✘</span></td>
-                    </tr>
                     <tr class="group-end">
                         <td class="feature-name">Sim-to-Real Support</td>
                         <td class="highlight-col"><span class="check">✔</span></td>
@@ -631,7 +625,7 @@
 
                     <!-- Supported Tasks -->
                     <tr>
-                        <td rowspan="3" class="category-cell">Supported<br>Tasks</td>
+                        <td rowspan="4" class="category-cell">Supported<br>Tasks</td>
                         <td class="feature-name">Single-Agent</td>
                         <td class="highlight-col"><span class="check">✔</span></td>
                         <td><span class="check">✔</span></td>
@@ -656,6 +650,15 @@
                         <td><span class="cross">✘</span></td>
                         <td><span class="check">✔</span></td>
                         <td><span class="cross">✘</span></td>
+                        <td><span class="check">✔</span></td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name">Physical-Social Composite Task</td>
+                        <td class="highlight-col"><span class="check">✔</span></td>
+                        <td><span class="check">✔</span></td>
+                        <td><span class="check">✔</span></td>
+                        <td><span class="check">✔</span></td>
+                        <td><span class="check">✔</span></td>
                         <td><span class="check">✔</span></td>
                     </tr>
                 </tbody>
